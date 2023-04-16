@@ -43,23 +43,20 @@
   color: white;
 }
 .game-desc h1 {
-  background: linear-gradient(to right, var(--primaryClr), var(--purple));
   margin-bottom: clamp(0.5rem, 0.6vw, 1rem);
+  color: var(--primaryClr);
   width: fit-content;
   margin-inline: auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: clamp(2.5rem, 2.9vw, 5rem);
   font-family: "Luckiest Guy", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   letter-spacing: 3px;
-  text-shadow: 1px 1px 2px var(--primaryClr), 0 0 1em var(--purple),
-    0 0 0.2em var(--purple);
+  text-shadow: 1px 1px 1px var(--primaryClr), 0 0 .2em var(--purple);
 }
 .game-desc p {
   color: rgb(148, 148, 148);
-  font-size: clamp(1.1rem, 1.3vw, 2rem);
+  font-size: clamp(1.1rem, 1.2vw, 2rem);
   font-style: italic;
 }
 
@@ -122,7 +119,7 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
 }
 .score-board div {
   background-color: rgb(235, 235, 235);
@@ -145,6 +142,9 @@
 @media (max-width: 683px) {
   .game-container {
     width: 90%;
+  }
+  .score-board {
+    margin-bottom: 1.5rem;
   }
   .dice {
     width: 3.5rem;
