@@ -32,7 +32,7 @@ export default function Tenzies() {
   const [finishedGame, setFinishedGame] = useState(false);
 
   const [scores, setScores] = useState(
-    JSON.parse(localStorage.getItem("scores")) || [0]
+    JSON.parse(localStorage.getItem("scores")) || []
   );
 
   const [recordScore, setRecordScore] = useState(0);
@@ -73,12 +73,11 @@ export default function Tenzies() {
   }
 
   useEffect(() => {
-    if (scores.length === 1) {
-      setRecordScore(0)
+    if (scores.length === 0) {
+      setRecordScore(0);
     } else {
-      const [,...newScores] = scores
-      localStorage.setItem("scores", JSON.stringify(newScores));
-      setRecordScore(Math.min(...newScores));
+      localStorage.setItem("scores", JSON.stringify(scores));
+      setRecordScore(Math.min(...scores));
     }
   }, [finishedGame]);
 
