@@ -22,7 +22,7 @@ export default function Dice(props) {
       onClick={props.holdDice}
       className={`dice ${props.isHeld ? "held-dice" : ""}`}
     >
-      <img src={`./src/assets/Dice/${randomDice()}`} alt={randomDice()} />
+      <img src={`/src/assets/Dice/${randomDice()}`} alt={randomDice()} />
     </div>
   );
 }
