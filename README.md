@@ -1,5 +1,6 @@
 # Tenzi-Dice-Game
 Roll until all the dice are the same.<br></br> Click each die to freeze it at its current value between rolls.
+https://otizgit.github.io/Tenzi-Dice-Game/
 
 ![Screenshot (526)](https://user-images.githubusercontent.com/110433564/232344795-bd90e319-18a2-4b3e-9183-929ae32b7fd2.png)
 ![Screenshot (527)](https://user-images.githubusercontent.com/110433564/232344796-a087b0a3-2de1-4ad9-9f08-ac60a15e2f9b.png)
