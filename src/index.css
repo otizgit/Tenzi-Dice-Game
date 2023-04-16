@@ -52,7 +52,7 @@
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   letter-spacing: 3px;
-  text-shadow: 1px 1px 1px var(--primaryClr), 0 0 .2em var(--purple);
+  text-shadow: 0 0 .3em var(--purple);
 }
 .game-desc p {
   color: rgb(148, 148, 148);
@@ -110,8 +110,14 @@
   cursor: pointer;
   font-weight: 700;
   transition: transform 0.3s ease;
-  animation: shake 1s linear alternate infinite;
+  animation: shake2 1s linear alternate infinite;
 }
+@keyframes shake2 {
+  to {
+    transform: scale(1.05);
+  }
+}
+
 .btn button:hover {
   background-color: hsl(34, 85%, 45%);
 }
